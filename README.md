@@ -6,16 +6,18 @@ Project Name : University Management REST API
 
 How To Use:
  
-1.Import the UniversityManagementSystem-RESTAPI.zip into Eclipse From General>Projects From Folder Or Archive(Select Archive).
+1.Import the UniversityManagementSystem-RESTAPI.zip into Eclipse From General>Projects From Folder Or Archive(Select Archive)
 2.There Is File Called university_management.sql, Execute The Given Sql Queries In This File In  Your Mysql  WorkSpace.
 3.Run this project on Tomcat-Server10.0.
 4.Visit http://localhost:8080/universitymanagement/ To See The Running Project
-5.Use API Client Tool(Like Postman) 
-To Perform Task Assigned In Mail:
+5.Use API Client Tool(Like Postman)
+
+
+To Perform Demo Task Use Information Below
 
 1. Insert Department data with the subject details which they are teaching.
 
-
+ 
 	method type: POST
 	url:- http://localhost:8080/universitymanagement/webapi/departments/addDepartment
 	method name:- addDepartment(DepartmentEntity departmentEntity);

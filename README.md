@@ -14,6 +14,8 @@ How To Use:
 To Perform Task Assigned In Mail:
 
 1. Insert Department data with the subject details which they are teaching.
+
+
 	method type: POST
 	url:- http://localhost:8080/universitymanagement/webapi/departments/addDepartment
 	method name:- addDepartment(DepartmentEntity departmentEntity);
@@ -43,12 +45,13 @@ To Perform Task Assigned In Mail:
 	}
 	response:"Department Data Added Successfully"
 
-2. Insert Student data with the subject details
+2. Insert Student data with the subject details.
+
+
 	method type: POST
 	url:- http://localhost:8080/universitymanagement/webapi/students/addStudent
 	method name:- addStudent( StudentEntity studentEntity);
 	input:- 
-
 	{
     	"student_name": "Shubham Raj",
     	"student_reg_no": "1701289389",
@@ -75,9 +78,11 @@ To Perform Task Assigned In Mail:
         	}
    	]
 	}
-	response:"Department Data Added Successfully"
+	response:"Department Data Added Successfull"
 
 3.1.Get the Student info. (All)
+
+
 	method type: GET
 	url:- http://localhost:8080/universitymanagement/webapi/students/
 	method name:- getStudents();
@@ -111,6 +116,8 @@ To Perform Task Assigned In Mail:
 	]
 
 3.2.Get the Student info. (Dept Wise)
+
+
 	method type: GET
 	url:- http://localhost:8080/universitymanagement/webapi/students/DP101
 	method name:- getStudentWithDeptId(@PathParam("dept_id") String dept_id);
@@ -135,7 +142,9 @@ To Perform Task Assigned In Mail:
     	},
 	]
 
-4.Update the marks student is secured under each subject.
+4.Update the marks student is secured under each subject
+
+
 	method type: PUT
 	url:- http://localhost:8080/universitymanagement/webapi/marks/updateMarks
 	method name:- updateMarks( MarksEntity marksEntity);
